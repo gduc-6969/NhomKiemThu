@@ -1,4 +1,4 @@
-# BÁO CÁO LỖI (Bug Reports) 🐞
+# BÁO CÁO LỖI (Bug Reports)
 
 > **Hệ thống:** Website bán hàng online (E-commerce)  
 > **Tổng số bug:** 10  
@@ -16,8 +16,8 @@
 | **Các bước tái hiện** | 1. Đăng nhập vào hệ thống <br> 2. Thêm sản phẩm "Áo thun nam" (tồn kho = 10) vào giỏ, số lượng = 2 <br> 3. Tiến hành thanh toán bằng COD <br> 4. Đặt hàng thành công <br> 5. Quay lại trang chi tiết sản phẩm "Áo thun nam", kiểm tra tồn kho |
 | **Kết quả mong đợi (Expected)** | Tồn kho = 8 (10 − 2) |
 | **Kết quả thực tế (Actual)** | Tồn kho vẫn = 10, không bị trừ |
-| **Mức độ nghiêm trọng (Severity)** | 🔴 **Critical** |
-| **Độ ưu tiên (Priority)** | **High** |
+| **Mức độ nghiêm trọng (Severity)** | Critical |
+| **Độ ưu tiên (Priority)** | High |
 | **Môi trường (Environment)** | Chrome 120, Windows 11 |
 
 ---
@@ -32,8 +32,8 @@
 | **Các bước tái hiện** | 1. Mở DevTools (F12) → Tab Network <br> 2. Đăng nhập với thông tin hợp lệ <br> 3. Kiểm tra response body của request POST /api/login |
 | **Kết quả mong đợi (Expected)** | Response không chứa mật khẩu hoặc chỉ trả về token |
 | **Kết quả thực tế (Actual)** | Response chứa trường "password": "Test@1234" dạng plaintext |
-| **Mức độ nghiêm trọng (Severity)** | 🔴 **Critical** |
-| **Độ ưu tiên (Priority)** | **High** |
+| **Mức độ nghiêm trọng (Severity)** | Critical |
+| **Độ ưu tiên (Priority)** | High |
 | **Môi trường (Environment)** | Chrome 120, Windows 11 |
 
 ---
@@ -48,8 +48,8 @@
 | **Các bước tái hiện** | 1. Thêm "Áo thun nam" (200.000đ) vào giỏ, số lượng = 1 <br> 2. Mở trang giỏ hàng <br> 3. Sửa số lượng thành 3 <br> 4. Kiểm tra tổng tiền |
 | **Kết quả mong đợi (Expected)** | Tổng tiền = 600.000đ (200.000 × 3) |
 | **Kết quả thực tế (Actual)** | Tổng tiền = 200.000đ (vẫn giữ giá trị cũ, không nhân với số lượng mới) |
-| **Mức độ nghiêm trọng (Severity)** | 🟠 **Major** |
-| **Độ ưu tiên (Priority)** | **High** |
+| **Mức độ nghiêm trọng (Severity)** | Major |
+| **Độ ưu tiên (Priority)** | High |
 | **Môi trường (Environment)** | Chrome 120, Windows 11 |
 
 ---
@@ -64,8 +64,8 @@
 | **Các bước tái hiện** | 1. Tìm sản phẩm "Túi xách X" (tồn kho = 0) <br> 2. Mở trang chi tiết <br> 3. Nhấn "Thêm vào giỏ hàng" |
 | **Kết quả mong đợi (Expected)** | Nút "Thêm vào giỏ" bị disable hoặc hiển thị thông báo "Sản phẩm đã hết hàng" |
 | **Kết quả thực tế (Actual)** | Sản phẩm được thêm vào giỏ bình thường, không có cảnh báo |
-| **Mức độ nghiêm trọng (Severity)** | 🟠 **Major** |
-| **Độ ưu tiên (Priority)** | **High** |
+| **Mức độ nghiêm trọng (Severity)** | Major |
+| **Độ ưu tiên (Priority)** | High |
 | **Môi trường (Environment)** | Chrome 120, Windows 11 |
 
 ---
@@ -80,8 +80,8 @@
 | **Các bước tái hiện** | 1. Thêm sản phẩm vào giỏ hàng <br> 2. Nhấn "Thanh toán" <br> 3. Để trống trường "Địa chỉ giao hàng" <br> 4. Nhấn "Tiếp tục" |
 | **Kết quả mong đợi (Expected)** | Hiển thị thông báo "Vui lòng nhập địa chỉ giao hàng", không cho tiếp tục |
 | **Kết quả thực tế (Actual)** | Hệ thống vẫn cho tiếp tục sang bước chọn phương thức thanh toán |
-| **Mức độ nghiêm trọng (Severity)** | 🟠 **Major** |
-| **Độ ưu tiên (Priority)** | **High** |
+| **Mức độ nghiêm trọng (Severity)** | Major |
+| **Độ ưu tiên (Priority)** | High |
 | **Môi trường (Environment)** | Chrome 120, Windows 11 |
 
 ---
@@ -96,8 +96,8 @@
 | **Các bước tái hiện** | 1. Mở trang đăng ký <br> 2. Nhập email: testuser@ <br> 3. Nhập mật khẩu: Test@1234 <br> 4. Nhấn "Đăng ký" |
 | **Kết quả mong đợi (Expected)** | Hiển thị thông báo "Email không hợp lệ", không cho đăng ký |
 | **Kết quả thực tế (Actual)** | Đăng ký thành công với email "testuser@", không có validation |
-| **Mức độ nghiêm trọng (Severity)** | 🟠 **Major** |
-| **Độ ưu tiên (Priority)** | **Medium** |
+| **Mức độ nghiêm trọng (Severity)** | Major |
+| **Độ ưu tiên (Priority)** | Medium |
 | **Môi trường (Environment)** | Chrome 120, Windows 11 |
 
 ---
@@ -112,8 +112,8 @@
 | **Các bước tái hiện** | 1. Mở trang danh sách sản phẩm <br> 2. Nhập giá tối thiểu: 500000 <br> 3. Nhập giá tối đa: 100000 <br> 4. Nhấn "Lọc" |
 | **Kết quả mong đợi (Expected)** | Hiển thị thông báo "Giá tối thiểu không được lớn hơn giá tối đa" hoặc tự hoán đổi giá trị |
 | **Kết quả thực tế (Actual)** | Hiển thị trang trống không có sản phẩm, không có thông báo giải thích |
-| **Mức độ nghiêm trọng (Severity)** | 🟠 **Major** |
-| **Độ ưu tiên (Priority)** | **Medium** |
+| **Mức độ nghiêm trọng (Severity)** | Major |
+| **Độ ưu tiên (Priority)** | Medium |
 | **Môi trường (Environment)** | Chrome 120, Windows 11 |
 
 ---
@@ -128,8 +128,8 @@
 | **Các bước tái hiện** | 1. Mở trang chi tiết sản phẩm có hình ảnh URL bị lỗi (404) <br> 2. Quan sát vùng hiển thị hình ảnh |
 | **Kết quả mong đợi (Expected)** | Hiển thị hình placeholder mặc định (ảnh "No Image Available") |
 | **Kết quả thực tế (Actual)** | Hiển thị icon broken image (hình vỡ) của trình duyệt, giao diện bị xấu |
-| **Mức độ nghiêm trọng (Severity)** | 🟡 **Minor** |
-| **Độ ưu tiên (Priority)** | **Low** |
+| **Mức độ nghiêm trọng (Severity)** | Minor |
+| **Độ ưu tiên (Priority)** | Low |
 | **Môi trường (Environment)** | Chrome 120, Windows 11 |
 
 ---
@@ -144,8 +144,8 @@
 | **Các bước tái hiện** | 1. Mở trang đăng nhập <br> 2. Nhập email hợp lệ <br> 3. Nhập mật khẩu sai <br> 4. Nhấn "Đăng nhập" |
 | **Kết quả mong đợi (Expected)** | Hiển thị thông báo "Sai email hoặc mật khẩu" (tiếng Việt) |
 | **Kết quả thực tế (Actual)** | Hiển thị "Invalid email or password" (tiếng Anh) |
-| **Mức độ nghiêm trọng (Severity)** | 🟡 **Minor** |
-| **Độ ưu tiên (Priority)** | **Low** |
+| **Mức độ nghiêm trọng (Severity)** | Minor |
+| **Độ ưu tiên (Priority)** | Low |
 | **Môi trường (Environment)** | Chrome 120, Windows 11 |
 
 ---
@@ -160,8 +160,8 @@
 | **Các bước tái hiện** | 1. Đặt 3 đơn hàng vào các thời điểm khác nhau <br> 2. Mở trang "Lịch sử đơn hàng" <br> 3. Kiểm tra thứ tự hiển thị |
 | **Kết quả mong đợi (Expected)** | Đơn hàng mới nhất hiển thị ở trên cùng (sắp xếp giảm dần theo thời gian) |
 | **Kết quả thực tế (Actual)** | Đơn hàng hiển thị theo thứ tự ngẫu nhiên, không theo thời gian |
-| **Mức độ nghiêm trọng (Severity)** | 🟡 **Minor** |
-| **Độ ưu tiên (Priority)** | **Low** |
+| **Mức độ nghiêm trọng (Severity)** | Minor |
+| **Độ ưu tiên (Priority)** | Low |
 | **Môi trường (Environment)** | Chrome 120, Windows 11 |
 
 ---
@@ -170,9 +170,9 @@
 
 | Severity | Số lượng | Bug IDs |
 |----------|----------|---------|
-| 🔴 Critical | 2 | BUG_CHECKOUT_001, BUG_AUTH_001 |
-| 🟠 Major | 5 | BUG_CART_001, BUG_CART_002, BUG_CHECKOUT_002, BUG_AUTH_002, BUG_PROD_001 |
-| 🟡 Minor | 3 | BUG_PROD_002, BUG_AUTH_003, BUG_CHECKOUT_003 |
+| Critical | 2 | BUG_CHECKOUT_001, BUG_AUTH_001 |
+| Major | 5 | BUG_CART_001, BUG_CART_002, BUG_CHECKOUT_002, BUG_AUTH_002, BUG_PROD_001 |
+| Minor | 3 | BUG_PROD_002, BUG_AUTH_003, BUG_CHECKOUT_003 |
 | **Tổng** | **10** | |
 
 | Module | Số bug |

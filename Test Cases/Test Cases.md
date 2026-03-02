@@ -1,4 +1,4 @@
-# CA KIỂM THỬ (Test Cases) 📋
+# CA KIỂM THỬ (Test Cases)
 
 > **Hệ thống:** Website bán hàng online (E-commerce)  
 > **Tổng số test case:** 45  
@@ -657,6 +657,6 @@
 | Checkout | 10 | 6 | 3 | 1 |
 | **Tổng** | **45** | **23** | **13** | **9** |
 
-- **Negative cases:** 13 (≥ 10 ✓)
-- **Boundary cases:** 9 (≥ 5 ✓)
-- **Validation / Bảo mật cơ bản:** TC_AUTH_003, TC_AUTH_004, TC_AUTH_006, TC_AUTH_009, TC_AUTH_010, TC_PROD_009, TC_CHECKOUT_002, TC_CHECKOUT_010 = 8 (≥ 5 ✓)
+- **Negative cases:** 13 (yeu cau toi thieu 10)
+- **Boundary cases:** 9 (yeu cau toi thieu 5)
+- **Validation / Bảo mật cơ bản:** TC_AUTH_003, TC_AUTH_004, TC_AUTH_006, TC_AUTH_009, TC_AUTH_010, TC_PROD_009, TC_CHECKOUT_002, TC_CHECKOUT_010 = 8 (yeu cau toi thieu 5)

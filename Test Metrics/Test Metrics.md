@@ -1,4 +1,4 @@
-# CHỈ SỐ KIỂM THỬ (Test Metrics) 📈
+# CHỈ SỐ KIỂM THỬ (Test Metrics)
 
 > **Hệ thống:** Website bán hàng online (E-commerce)  
 > **Ngày báo cáo:** 28/03/2026  
@@ -8,7 +8,7 @@
 
 ## 1. Tỷ lệ thực thi test (Test Execution Rate)
 
-$$\text{Test Execution Rate} = \frac{\text{Test Cases Executed}}{\text{Total Test Cases}} \times 100$$
+Công thức: Test Execution Rate = (Số TC đã thực thi / Tổng số TC) x 100
 
 | Chỉ số | Giá trị |
 |--------|---------|
@@ -30,7 +30,7 @@ $$\text{Test Execution Rate} = \frac{\text{Test Cases Executed}}{\text{Total Tes
 
 ## 2. Mật độ lỗi theo Module (Defect Density per Module)
 
-$$\text{Defect Density} = \frac{\text{Số bug phát hiện}}{\text{Số test case thực thi}}$$
+Công thức: Defect Density = Số bug phát hiện / Số test case thực thi
 
 | Module | Số Test Case thực thi | Số Bug phát hiện | Mật độ lỗi |
 |--------|----------------------|------------------|------------|
@@ -48,12 +48,12 @@ $$\text{Defect Density} = \frac{\text{Số bug phát hiện}}{\text{Số test ca
 
 ## 3. Phân bố mức độ nghiêm trọng (Severity Distribution)
 
-| Severity | Số lượng | Tỷ lệ (%) | Biểu đồ |
-|----------|----------|-----------|---------|
-| 🔴 Critical | 2 | 20% | ██████████ |
-| 🟠 Major | 5 | 50% | █████████████████████████ |
-| 🟡 Minor | 3 | 30% | ███████████████ |
-| **Tổng** | **10** | **100%** | |
+| Severity | Số lượng | Tỷ lệ (%) |
+|----------|----------|----------|
+| Critical | 2 | 20% |
+| Major | 5 | 50% |
+| Minor | 3 | 30% |
+| **Tổng** | **10** | **100%** |
 
 ### Phân bố Severity theo Module:
 
@@ -74,7 +74,7 @@ $$\text{Defect Density} = \frac{\text{Số bug phát hiện}}{\text{Số test ca
 
 ## 4. Độ bao phủ yêu cầu (Requirement Coverage)
 
-$$\text{Requirement Coverage} = \frac{\text{Số Requirement được bao phủ bởi TC}}{\text{Tổng số Requirement}} \times 100$$
+Công thức: Requirement Coverage = (Số Requirement được bao phủ bởi TC / Tổng số Requirement) x 100
 
 | Chỉ số | Giá trị |
 |--------|---------|
@@ -113,11 +113,11 @@ $$\text{Requirement Coverage} = \frac{\text{Số Requirement được bao phủ 
 
 | # | Chỉ số (Metric) | Giá trị | Ngưỡng mong đợi | Đánh giá |
 |---|-----------------|---------|-----------------|----------|
-| 1 | Tỷ lệ thực thi test (Execution Rate) | 95.56% | ≥ 90% | ✅ Đạt |
-| 2 | Mật độ lỗi trung bình (Avg Defect Density) | 0.23 | ≤ 0.15 | ❌ Chưa đạt |
-| 3 | Tỷ lệ bug Critical | 20% | 0% | ❌ Chưa đạt |
-| 4 | Độ bao phủ yêu cầu (Requirement Coverage) | 100% | ≥ 95% | ✅ Đạt |
-| 5 | Tỷ lệ Pass | 76.74% | ≥ 90% | ❌ Chưa đạt |
+| 1 | Tỷ lệ thực thi test (Execution Rate) | 95.56% | >= 90% | Dat |
+| 2 | Mật độ lỗi trung bình (Avg Defect Density) | 0.23 | <= 0.15 | Chua dat |
+| 3 | Tỷ lệ bug Critical | 20% | 0% | Chua dat |
+| 4 | Độ bao phủ yêu cầu (Requirement Coverage) | 100% | >= 95% | Dat |
+| 5 | Tỷ lệ Pass | 76.74% | >= 90% | Chua dat |
 
 ### Kết luận:
 - Hệ thống đạt yêu cầu về **tỷ lệ thực thi test** và **độ bao phủ yêu cầu**.
